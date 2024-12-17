@@ -12,9 +12,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="w-[1280px] m-auto flex flex-col justify-center">
+      <body className="max-w-[1280px] m-auto flex flex-col justify-center">
         <Navbar />
-        <div className="h-full w-[1280px] bg-red-100 py-16 px-8 m-auto">
+        <div className="h-full max-w-[1280px] py-16 px-8 m-auto">
           {children}
         </div>
       </body>

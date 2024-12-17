@@ -4,7 +4,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #006ff9;
+  --foreground: #00004d;
   --text: #161b2c;
   --border: #e8eef7;
 }
@@ -12,7 +12,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #ffffff;
-    --foreground: #006ff9;
+    --foreground: #00004d;
     --text: #161b2c;
     --border: #e8eef7;
   }
@@ -22,4 +22,20 @@ body {
   color: var(--text);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  @apply text-6xl font-bold;
+}
+
+h2 {
+  @apply text-3xl font-bold;
+}
+
+h4 {
+  @apply text-2xl;
+}
+
+.fade-text {
+  @apply opacity-0 translate-y-4 animate-fade-down;
 }
