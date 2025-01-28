@@ -38,31 +38,39 @@ export const Navbar = () => {
   );
 
   return (
-    <div className="max-h-24 min-h-20 w-full bg-background border-b border-border p-6 flex justify-between items-center">
-      <div className="w-full flex items-center mx-auto p-6 text-sm">
-        <Image
-          src="/image/Bailey-logo-cropped.jpeg"
-          alt="logo"
-          width={60}
-          height={60}
-        />
-        <div className="flex justify-evenly items-center gap-12 font-semibold ml-auto">
-          <Link className="cursor-pointer hidden md:block" href="/about">
-            About Us
-          </Link>
-          <Link className="cursor-pointer hidden md:block" href="/services">
-            Products
-          </Link>
-          <Button>Contact Us</Button>
-          <MenuIcon
-            onClick={toggleDrawer(true)}
-            className="cursor-pointer block md:hidden"
-          >
-            btn
-          </MenuIcon>
-          <Drawer open={open} onClose={toggleDrawer(false)} anchor="right">
-            {DrawerList}
-          </Drawer>
+    <div className="border-b border-border bg-foreground">
+      <div className="max-w-[1280px] max-h-24 min-h-20 m-auto w-full bg-background p-6 flex justify-between items-center  bg-foreground">
+        <div className="w-full flex items-center mx-auto p-6 text-sm">
+          <Image
+            className="rounded-full"
+            src="/image/Bailey-logo-cropped.jpeg"
+            alt="logo"
+            width={60}
+            height={60}
+          />
+          <div className="flex justify-evenly items-center gap-12 font-semibold ml-auto">
+            <Link
+              className="cursor-pointer hidden md:block text-white"
+              href="/products"
+            >
+              Products
+            </Link>
+            <Button>Contact Us</Button>
+            <MenuIcon
+              onClick={toggleDrawer(true)}
+              className="cursor-pointer block md:hidden"
+            >
+              btn
+            </MenuIcon>
+            <Drawer
+              className="bg-white text-white"
+              open={open}
+              onClose={toggleDrawer(false)}
+              anchor="right"
+            >
+              {DrawerList}
+            </Drawer>
+          </div>
         </div>
       </div>
     </div>

@@ -3,10 +3,10 @@ import React, { Key } from "react";
 import Image from "next/image";
 
 interface Props {
-  header: String;
-  bullets: String[];
+  header: string;
+  bullets: string[];
   Icon: typeof PropTypes.elementType;
-  imgName: String;
+  imgName: string;
 }
 
 export const ListWithHeader: React.FC<Props> = ({
@@ -16,16 +16,23 @@ export const ListWithHeader: React.FC<Props> = ({
   imgName,
 }) => {
   return (
-    <div className="flex flex-col gap-4 bg-red-100">
-      <Image src={`/image/${imgName}`} alt="img" width={1000} height={2000} />
+    <div className="flex flex-col gap-4  p-4">
+      <div className="w-full h-[300px] overflow-hidden relative">
+        <Image
+          className="zoom-effect rounded-2xl"
+          src={`/image/${imgName}`}
+          alt="img"
+          layout="fill" // Fills the container
+          objectFit="cover" // Ensures consistent sizing without distortion
+        />
+      </div>
       <div className="inline-flex items-center gap-2">
-        {Icon && <Icon className="text-primary" />}{" "}
-        {/* Display the icon if provided */}
-        <h2 className="text-xl font-semibold whitespace-nowrap">{header}</h2>
+        {Icon && <Icon className="text-primary text-foreground" />}
+        <h4 className="font-semibold whitespace-nowrap">{header}</h4>
       </div>
       <ul className="list-disc pl-5 space-y-1">
-        {bullets.map((bullet: String, index: Key) => (
-          <li key={index} className="text-secondary">
+        {bullets.map((bullet: string, index: Key) => (
+          <li key={index} className="text-secondary text-lg">
             {bullet}
           </li>
         ))}

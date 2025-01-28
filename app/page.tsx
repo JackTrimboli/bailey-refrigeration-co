@@ -3,26 +3,32 @@ import EngineeringIcon from "@mui/icons-material/Engineering";
 import StarsIcon from "@mui/icons-material/Stars";
 import PublicIcon from "@mui/icons-material/Public";
 import SettingsSuggestIcon from "@mui/icons-material/SettingsSuggest";
+import { Button } from "@/components/button/Button";
 
 export default function Home() {
   return (
     <div className="flex flex-col gap-12 px-6 lg:px-12">
       {/* Header Section */}
-      <div className="flex flex-col gap-4 text-left fade-text">
-        <h1 className="text-3xl md:text-4xl font-bold">
-          Bailey Refrigeration Co.
-        </h1>
-        <h4 className="text-secondary md:text-xl font-medium">
+      <div className="fade-down-animation flex flex-col gap-4 text-left">
+        <h1>Bailey Refrigeration Co.</h1>
+        <h4 className="text-secondary font-medium">
           Your Trusted Partner in HVAC-R and Dehumidification for Over 65 Years
         </h4>
+        <Button>Contact Us Today!</Button>
       </div>
 
       {/* Why Choose Section */}
       <div className="w-full flex flex-col gap-8">
-        <h2 className="fade-text delay-1000 text-2xl md:text-3xl font-semibold">
+        <h2
+          className="fade-down-animation font-semibold"
+          style={{ animationDelay: "500ms" }}
+        >
           Why Choose Bailey Refrigeration?
         </h2>
-        <div className="fade-text flex flex-col md:flex-row gap-8">
+        <div
+          className="fade-up-animation grid grid-cols-1 md:grid-cols-2  gap-12"
+          style={{ overflowX: "auto", animationDelay: "1000ms" }}
+        >
           <ListWithHeader
             header="A Legacy of Excellence"
             bullets={[
