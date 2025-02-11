@@ -17,13 +17,13 @@ export const ListWithHeader: React.FC<Props> = ({
 }) => {
   return (
     <div className="flex flex-col gap-4  p-4">
-      <div className="w-full h-[300px] overflow-hidden relative">
+      <div className="w-full h-[300px] overflow-hidden rounded-2xl relative">
         <Image
-          className="zoom-effect rounded-2xl"
+          className="zoom-effect"
           src={`/image/${imgName}`}
           alt="img"
-          layout="fill" // Fills the container
-          objectFit="cover" // Ensures consistent sizing without distortion
+          layout="fill"
+          objectFit="cover"
         />
       </div>
       <div className="inline-flex items-center gap-2">

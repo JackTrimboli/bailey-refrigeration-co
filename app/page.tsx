@@ -1,9 +1,10 @@
+import Link from "next/link";
 import { ListWithHeader } from "@/components/listWithHeader/ListWithHeader";
 import EngineeringIcon from "@mui/icons-material/Engineering";
 import StarsIcon from "@mui/icons-material/Stars";
 import PublicIcon from "@mui/icons-material/Public";
 import SettingsSuggestIcon from "@mui/icons-material/SettingsSuggest";
-import { Button } from "@/components/button/Button";
+import { Button } from "@/components/Button/Button";
 
 export default function Home() {
   return (
@@ -14,7 +15,9 @@ export default function Home() {
         <h4 className="text-secondary font-medium">
           Your Trusted Partner in HVAC-R and Dehumidification for Over 65 Years
         </h4>
-        <Button>Contact Us Today!</Button>
+        <Link className="w-fit" href="/contact" passHref>
+          <Button type="secondary">Contact Us Today!</Button>
+        </Link>
       </div>
 
       {/* Why Choose Section */}
