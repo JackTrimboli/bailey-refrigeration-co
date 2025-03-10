@@ -24,10 +24,20 @@ export default {
           "0%": { opacity: "0", transform: "translateY(3rem)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
+        "fade-right": {
+          "0%": { opacity: "0", transform: "translateX(3rem)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        "fade-left": {
+          "0%": { opacity: "0", transform: "translateX(-3rem)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
       },
       animation: {
         "fade-down": "fade-down 1s ease-out forwards",
         "fade-up": "fade-up 1s ease-out forwards",
+        "fade-right": "fade-right 1s ease-out forwards",
+        "fade-left": "fade-left 1s ease-out forwards",
       },
     },
   },

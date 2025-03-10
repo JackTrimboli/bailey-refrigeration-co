@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { Button } from "@/components/Button/Button";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -7,6 +8,8 @@ export default function Contact() {
     email: "",
     message: "",
   });
+
+  const inputClass = "p-2 border rounded-lg focus:outline-none";
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -18,65 +21,58 @@ export default function Contact() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log("Form submitted:", formData);
-    setFormData({ name: "", email: "", message: "" });
-    alert("Thank you for your message. We'll get back to you soon!");
+  const handleSubmit = () => {
+    alert("test");
   };
 
   return (
-    <div className="max-w-2xl mx-auto">
-      <h1 className="text-2xl font-bold mb-4">Contact Us</h1>
-      <form onSubmit={handleSubmit} className="space-y-4">
-        <div>
-          <label htmlFor="name" className="block mb-1 text-sm font-medium">
-            Name
-          </label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-            className="w-full p-2 border border-gray-300 rounded-md text-sm"
-          />
+    <div className="w-full max-w-[1280px] flex flex-col gap-12 px-4 md:px-8 lg:px-16">
+      <div className="flex flex-col gap-4 fade-down-animation">
+        <h1>Get in touch with us.</h1>
+        <h4 className="text-secondary font-medium text-sm md:text-base">
+          Fill out this form or reach out to us via phone or email. We'll get
+          back to you as soon a possible.
+        </h4>
+      </div>
+      <form
+        onSubmit={handleSubmit}
+        className="flex flex-col gap-2 md:gap-4 fade-up-animation w-full"
+      >
+        <label>
+          <h4 className="font-bold">Name</h4>
+        </label>
+        <input
+          className={inputClass}
+          type="text"
+          name="name"
+          value={formData.name}
+          onChange={handleChange}
+        />
+        <label>
+          <h4 className="font-bold">Email</h4>
+        </label>
+        <input
+          className={inputClass}
+          type="email"
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
+        />
+        <label>
+          <h4 className="font-bold">Message</h4>
+        </label>
+        <textarea
+          className={inputClass}
+          name="message"
+          value={formData.message}
+          onChange={handleChange}
+          rows={5}
+        />
+        <div className="flex justify-center my-8">
+          <Button type="secondary" buttonType="submit">
+            Submit
+          </Button>
         </div>
-        <div>
-          <label htmlFor="email" className="block mb-1 text-sm font-medium">
-            Email
-          </label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-            className="w-full p-2 border border-gray-300 rounded-md text-sm "
-          />
-        </div>
-        <div>
-          <label htmlFor="message" className="block mb-1 text-sm font-medium">
-            Message
-          </label>
-          <textarea
-            id="message"
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            required
-            rows={4}
-            className="w-full p-2 border border-gray-300 rounded-md text-sm"
-          ></textarea>
-        </div>
-        <button
-          type="submit"
-          className="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 text-sm"
-        >
-          Send Message
-        </button>
       </form>
     </div>
   );

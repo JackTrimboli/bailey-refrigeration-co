@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ListWithHeader } from "@/components/listWithHeader/ListWithHeader";
+import { ListWithHeader } from "@/components/ListWithHeader/ListWithHeader";
 import EngineeringIcon from "@mui/icons-material/Engineering";
 import StarsIcon from "@mui/icons-material/Stars";
 import PublicIcon from "@mui/icons-material/Public";
@@ -29,7 +29,7 @@ export default function Home() {
           Why Choose Bailey Refrigeration?
         </h2>
         <div
-          className="fade-up-animation grid grid-cols-1 md:grid-cols-2  gap-12"
+          className="fade-up-animation grid grid-cols-1 md:grid-cols-2 gap-8"
           style={{ overflowX: "auto", animationDelay: "1000ms" }}
         >
           <ListWithHeader
