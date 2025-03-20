@@ -18,7 +18,7 @@ export default function Footer() {
             <MailIcon />
             <span>Email Us</span>
           </span>
-          <span>test@email.com</span>
+          <span>info@baileyco.com</span>
         </h5>
         <h5 className="flex flex-col text-left max-w-64">
           <span className="flex gap-2 text-primary">

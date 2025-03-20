@@ -71,7 +71,7 @@ export const Navbar: React.FC = () => {
             >
               <h6>Products</h6>
             </Link>
-            <Link href="/contact" passHref>
+            <Link className="hidden sm:block" href="/contact" passHref>
               <Button>Contact Us</Button>
             </Link>
             <MenuIcon
