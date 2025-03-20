@@ -24,10 +24,27 @@ export default function Contact() {
     }));
   };
 
+  // Email validation function
+  const isValidEmail = (email: string) => {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  };
+
   const handleSubmit = async () => {
-    setLoading(true);
     setError("");
     setSuccess(false);
+
+    // Validate form
+    if (!formData.name || !formData.email || !formData.message) {
+      setError("All fields are required.");
+      return;
+    }
+
+    if (!isValidEmail(formData.email)) {
+      setError("Please enter a valid email address.");
+      return;
+    }
+
+    setLoading(true);
 
     try {
       const response = await fetch("/api/send-email", {
@@ -62,7 +79,6 @@ export default function Contact() {
         </h4>
       </div>
 
-      {/* No form tag needed */}
       <div className="flex flex-col gap-2 md:gap-4 fade-up-animation w-full">
         <label className="font-bold">Name</label>
         <input
@@ -100,12 +116,12 @@ export default function Contact() {
           </Button>
         </div>
 
+        {error && <p className="text-red-500 text-center">{error}</p>}
         {success && (
           <p className="text-green-500 text-center">
             Message sent successfully!
           </p>
         )}
-        {error && <p className="text-red-500 text-center">{error}</p>}
       </div>
     </div>
   );
