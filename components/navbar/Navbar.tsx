@@ -76,7 +76,7 @@ export const Navbar: React.FC = () => {
             </Link>
             <MenuIcon
               onClick={toggleDrawer(true)}
-              className="cursor-pointer block md:hidden text-white"
+              className="cursor-pointer block md:!hidden text-white"
             />
             <Drawer open={open} onClose={toggleDrawer(false)} anchor="right">
               {DrawerList}
