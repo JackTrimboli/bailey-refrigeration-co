@@ -74,8 +74,8 @@ export default function Contact() {
       <div className="flex flex-col gap-4 fade-down-animation">
         <h1>Get in touch with us.</h1>
         <h4 className="text-secondary font-medium text-sm md:text-base">
-          Fill out this form or reach out to us via phone or email. We'll get
-          back to you as soon as possible.
+          Fill out this form or reach out to us via phone or email. We&apos;ll
+          get back to you as soon as possible.
         </h4>
       </div>
 

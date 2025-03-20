@@ -9,11 +9,11 @@ export const ProductSection = ({
   imgName,
   bullets,
 }: {
-  reversed: Boolean;
-  title: String;
-  desc: String;
-  imgName: String;
-  bullets: Array<String>;
+  reversed: boolean;
+  title: string;
+  desc: string;
+  imgName: string;
+  bullets: Array<string>;
 }) => {
   return (
     <div

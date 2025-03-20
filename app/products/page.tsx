@@ -1,17 +1,9 @@
 "use client";
 import React from "react";
-import { Carousel } from "react-responsive-carousel";
 import { ProductSection } from "@/components/ProductSection/ProductSection";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export default function Products() {
-  const images = [
-    "/image/ship-night.jpg",
-    "/image/ship-side-view.jpg",
-    "/image/ship-worker.jpg",
-    "/image/birds-eye-view.jpg",
-  ];
-
   return (
     <div className="mx-auto max-w-[1280px] flex flex-col gap-8 px-4 md:px-8 lg:px-16">
       <div className="fade-down-animation flex flex-col gap-4 text-left">
@@ -19,8 +11,8 @@ export default function Products() {
         <h4 className="text-secondary font-medium text-sm md:text-base">
           Bailey Refrigeration stocks millions of dollars worth of parts for
           refrigeration, air conditioning, heating, and dehumidification. We are
-          committed to meeting our customers' needs instantly, thanks to our
-          meticulous "in-stock" approach.
+          committed to meeting our customers&apos; needs instantly, thanks to
+          our meticulous &quot;in-stock&quot; approach.
         </h4>
       </div>
       <span className="fade-up-animation">
