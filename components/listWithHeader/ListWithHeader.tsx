@@ -1,11 +1,11 @@
-import PropTypes from "prop-types";
 import React, { Key } from "react";
 import Image from "next/image";
+import { SvgIconComponent } from "@mui/icons-material";
 
 interface Props {
   header: string;
   bullets: string[];
-  Icon: typeof PropTypes.elementType;
+  Icon?: SvgIconComponent; // Correct type for MUI icons
   imgName: string;
 }
 
