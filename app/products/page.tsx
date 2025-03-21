@@ -24,8 +24,7 @@ export default function Products() {
           }
           imgName={"marine.jpg"}
           bullets={[
-            "Controls & Equipment",
-            "Custom-designed",
+            "Custom-designed Controls & Equipment",
             "Tested for marine environments",
             "Holding patents on military-grade equipment tested for marine environments",
           ]}
