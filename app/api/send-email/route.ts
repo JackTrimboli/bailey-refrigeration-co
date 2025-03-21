@@ -9,15 +9,15 @@ export async function POST(req: Request) {
 
     // Send the user's email
     const data = await resend.emails.send({
-      from: "contact@baileyco.com",
-      to: "contact@baileyco.com",
+      from: "info@baileyco.com",
+      to: "info@baileyco.com",
       subject: `New Contact Form Submission from ${name}`,
       text: `Contact Form Submission from https://baileyco.com\n\nName: ${name}\nEmail: ${email}\nMessage: ${message}`,
     });
 
     // Send a confirmation email to the user
     await resend.emails.send({
-      from: "contact@baileyco.com",
+      from: "info@baileyco.com",
       to: email,
       subject: `Contact Form Confirmation`,
       text: "Thank you for reaching out to Bailey Refrigeration Co.! \n\nThis is a confirmation email that we have received your message and will be reaching out to you soon.",
