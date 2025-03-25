@@ -52,10 +52,10 @@ export const Navbar: React.FC = () => {
           <Link className="cursor-pointer text-white" href="/">
             <Image
               className="rounded-full"
-              src="/image/Bailey-logo-cropped.jpeg"
+              src="/image/bailey_refrigeration_co_inc_logo.jpeg"
               alt="logo"
-              width={60}
-              height={60}
+              width={87}
+              height={87}
             />
           </Link>
           <div className="flex justify-evenly items-center gap-12 font-semibold ml-auto">

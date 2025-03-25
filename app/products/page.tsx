@@ -22,7 +22,7 @@ export default function Products() {
           desc={
             "Designed to withstand harsh marine conditions, our specialized equipment ensures durability and reliability in maritime environments."
           }
-          imgName={"marine.jpg"}
+          imgName={"marine-equipment.jpg"}
           bullets={[
             "Custom-designed Controls & Equipment",
             "Tested for marine environments",
@@ -37,7 +37,7 @@ export default function Products() {
           desc={
             "A comprehensive selection of high-performance HVAC-R equipment for commercial buildings, industrial facilities, and specialized applications."
           }
-          imgName={"industrial.jpg"}
+          imgName={"scaffold-machinery.jpg"}
           bullets={[
             "Roof Top Units",
             "Chillers: Chiller Barrels, Heat Exchangers, Cooling Coils",
@@ -54,7 +54,7 @@ export default function Products() {
           desc={
             "A vast inventory of essential components and supplies for HVAC-R maintenance, repairs, and installations."
           }
-          imgName={"parts-and-tools.jpg"}
+          imgName={"warehouse.jpg"}
           bullets={[
             "Refrigerants, Oils, & HVAC Chemicals",
             "Gauges & Gauging Tools ",

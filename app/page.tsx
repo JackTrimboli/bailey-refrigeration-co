@@ -35,11 +35,10 @@ export default function Home() {
           <ListWithHeader
             header="A Legacy of Excellence"
             bullets={[
-              "Third-generation, Veteran-Owned Small Business.",
               "Proudly serving the New York/New Jersey area, the United States, and projects abroad.",
             ]}
             Icon={StarsIcon}
-            imgName="birds-eye-view.jpg"
+            imgName="cool-ship.jpg"
           />
           <ListWithHeader
             header="Unmatched Expertise"
@@ -49,7 +48,7 @@ export default function Home() {
               "Trusted to deliver solutions both locally and globally.",
             ]}
             Icon={EngineeringIcon}
-            imgName="ship-worker.jpg"
+            imgName="outdoor-system-with-hardhat.jpg"
           />
           <ListWithHeader
             header="Experience-Oriented Approach"
@@ -58,7 +57,7 @@ export default function Home() {
               "Proven track record of success across a wide range of industries.",
             ]}
             Icon={SettingsSuggestIcon}
-            imgName="ship-side-view.jpg"
+            imgName="truck-in-front-of-bay.jpg"
           />
           <ListWithHeader
             header="Global Reach, Local Commitment"
@@ -66,7 +65,7 @@ export default function Home() {
               "Serving customers nationwide and worldwide with the same dedication to quality.",
             ]}
             Icon={PublicIcon}
-            imgName="ship-night.jpg"
+            imgName="green-machinery.jpg"
           />
         </div>
       </div>
