@@ -35,6 +35,7 @@ export default function Home() {
           <ListWithHeader
             header="A Legacy of Excellence"
             bullets={[
+              "Providing top-tier service for over 70 years, delivering reliability and expertise every step of the way.",
               "Proudly serving the New York/New Jersey area, the United States, and projects abroad.",
             ]}
             Icon={StarsIcon}
@@ -48,7 +49,7 @@ export default function Home() {
               "Trusted to deliver solutions both locally and globally.",
             ]}
             Icon={EngineeringIcon}
-            imgName="outdoor-system-with-hardhat.jpg"
+            imgName="outdoor-system.jpg"
           />
           <ListWithHeader
             header="Experience-Oriented Approach"

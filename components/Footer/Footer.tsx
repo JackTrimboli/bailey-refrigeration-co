@@ -12,12 +12,14 @@ export default function Footer() {
             Call Us
           </span>
           <a
-            href="tel:8008224539"
-            className="text-lg font-medium text-blue-600 hover:underline"
+            href="tel:18008224539"
+            className="text-lg font-medium text-primary hover:underline"
+            aria-label="Call us at 1-800-8-BAILEY"
           >
-            (800) 822-4539
+            1-800-8-BAILEY
           </a>
         </h5>
+
         <h5 className="flex flex-col text-left">
           <span className="flex items-center gap-2 text-primary font-semibold">
             <MailIcon />
@@ -25,7 +27,7 @@ export default function Footer() {
           </span>
           <a
             href="mailto:info@baileyco.com"
-            className="text-lg font-medium text-blue-600 hover:underline"
+            className="text-lg font-medium text-primary hover:underline"
           >
             info@baileyco.com
           </a>
@@ -39,7 +41,7 @@ export default function Footer() {
             href="https://www.google.com/maps/search/?q=5146+W+Hurley+Pond+Rd+STE+5,+Wall+Township,+NJ+07727"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-lg font-medium text-blue-600 hover:underline block"
+            className="text-lg font-medium text-primary hover:underline block"
           >
             5146 W Hurley Pond Rd, STE 5, Wall Township, NJ 07727
           </a>
